@@ -1,0 +1,70 @@
+.Navbar{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:35px;
+    font-size: 20px;
+}
+
+.nav-connect{
+    padding:12px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#DA7C25 0.36%,#8923E1 102.06%);
+    font-size: 20px;
+    margin-top:7px;
+    cursor: pointer;
+    transition:0.5s
+}
+.nav-connect:hover{
+    transform:scale(1.05);
+}
+.nav-menu li{
+display: flex;
+flex-direction: column;
+gap: 4px;
+cursor: pointer;
+}
+.nav-menu li:hover{
+text-decoration: underline;
+color:#8923E1;
+transition: 0.4s;
+}
+.checkbtn{
+    font-size: 25px;
+    cursor: pointer;
+ 
+}
+#check{
+    display: none;
+}
+.anchor-link{
+    color:white;
+    text-decoration: none;
+}
+@media(max-width:550px){
+    .navbar{
+        margin: 15px 30px ;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap:20px;
+        z-index: 2;
+        width:300px;
+        height:100%;
+        background-color: white;
+        transition: right 0.5s;
+        right:-300px;
+       
+    }
+}
